@@ -29,8 +29,8 @@ from the use or distribution of the Sample Code.
 
 #Connect to your O365 tenant admin SP site with admin credentials.
 #Input the admin account UPN; script will prompt you for password at login.
-$AdminURI = "https://m365x636297-admin.sharepoint.com"
-$AdminAccount = "carlyhublou@cahublou.com"
+$AdminURI = "https://<yourTenantDoman>-admin.sharepoint.com"
+$AdminAccount = "<yourAdminAccount@yourTenantDomain>"
 Connect-SPOService -Url $AdminURI -Credential $AdminAccount
 
 #Create the file to send the data to.
